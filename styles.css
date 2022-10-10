@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(255,255,255);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+    padding: 0;
+    margin: 0;
+}
+
+#navbar{
+    border-right: 3px solid rgb(153,162,162);
+    position: fixed;
+    height: 100%;
+}
+
+h1{
+    text-align: center;
+    font-size: 22pt;
+    font-weight: 100;
+    padding: 0 30px 0 30px;
+}
+
+.nav-link{
+    display: flex;
+    text-decoration: none;
+    color: rgb(65, 65, 65);
+    border-bottom: 1.5px solid;
+    padding: 7px;
+    padding-left: 30px;
+}
+
+.nav-link:hover{
+    background-color: rgb(228, 228, 228);
+}
+
+.nav-link:first-of-type{
+    border-top: 1.5px solid rgb(65, 65, 65);
+}
+
+#main-doc header{
+    font-size: 22pt;
+    margin-left: 350px;
+}
+
+#main-doc header:first-child{
+    display: inline-block;
+    margin-top: 40px;
+}
+
+p{
+    color: rgb(65, 65, 65);
+    margin-left: 365px;
+    font-size: 11.5pt;
+    max-width: 75%;
+}
+
+ul{
+    color: rgb(65, 65, 65);
+    margin-left: 375px;
+    font-size: 11.5pt;
+    max-width: 75%;
+}
+
+ul ul{
+    margin-left: 0;
+}
+
+ul:last-child{
+    margin-bottom: 40px;
+}
+
+code{
+    display: block;
+    color: rgb(65, 65, 65);
+    background-color: rgb(247,247,247);
+    padding: 20px;
+    line-height: 0px;
+    max-width: 75%;
+    margin-left: 365px;
+    border-radius: 5px;
+}
+
+@media (max-height: 650px){
+
+    .scrollbar{
+        overflow: scroll;
+        overflow-x: hidden;
+        height: 500px;
+    }
+}
+
+@media (max-width: 800px) {
+    #navbar{
+        position: relative;
+    }
+
+    .scrollbar{
+        height: 200px;
+        border-bottom: 1px solid rgb(77,78,83);
+        border-top: 1px solid rgb(77,78,83);
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+
+    .nav-link:last-of-type{
+        border: 0;
+    }
+    .nav-link:first-of-type{
+        border-top: 0;
+    }
+
+    #main-doc header{
+        margin-left: 35px;
+    }
+
+    p{
+        margin-left: 50px;
+        max-width: 90%;
+    }
+
+    ul{
+        margin-left: 80px;
+        max-width: 90%;
+    }
+
+    code{
+        margin-left: 60px;
+        max-width: 85%;
+    }
+}
